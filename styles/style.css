@@ -10,6 +10,8 @@
   --main-font: "IBM Plex mono", sans-serif;
   --main-font-color: #f1b2ce;
   --decor-color: #ff0070;
+  --footer-shadow-color: #ff0070;
+  --card-title-color: #000028;
 }
 
 /* <!-- главная --> */
@@ -177,12 +179,12 @@ main {
 
 .advice__title {
   font-weight: normal;
-  color: var(--main-title-color);
+  color: var(--card-title-color);
 }
 
 .card__title,
 .gallery__title {
-  color: var(--main-title-color);
+  color: var(--card-title-color);
 }
 .section__title {
   color: var(--main-title-color);
@@ -244,10 +246,9 @@ footer {
   align-items: center;
   color: var(--title-color);
   line-height: 83%;
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--footer-shadow-color);
   align-self: center;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  align-self: center;
 }
 
 /* <!-- адаптивы --> */
@@ -289,6 +290,10 @@ footer {
   .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
+
+  .header__text {
+    max-width: 364px;
+  }
 }
 
 @media (width >= 1024px) {
@@ -308,5 +313,9 @@ footer {
 
   .header__theme-menu-list {
     flex-direction: row;
+  }
+
+  .header__text {
+    max-width: 491px;
   }
 }

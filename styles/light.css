@@ -29,6 +29,8 @@
     --main-font-color: #353430;
     --main-title-color: #353430;
     --decor-color: #353430;
+    --footer-shadow-color: #ff0070;
+    --card-title-color: #353430;
   }
 
   :root:not(.theme-dark) .rec {

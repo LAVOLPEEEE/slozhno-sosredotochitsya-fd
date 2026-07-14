@@ -10,8 +10,10 @@
   --button-hover: #ff007066;
   --button-color: #ff0070;
   --title-color: #db00ff;
-  --main-font: "IBM Plex Mono", monospace;
-  --main-font-color: #f1b2ce;
   --main-title-color: #ff0070;
+  --main-font: "IBM Plex mono", sans-serif;
+  --main-font-color: #f1b2ce;
   --decor-color: #ff0070;
+  --footer-shadow-color: #ff0070;
+  --card-title-color: #000028;
 }
