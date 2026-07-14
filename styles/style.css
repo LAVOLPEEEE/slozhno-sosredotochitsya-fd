@@ -12,6 +12,7 @@
   --decor-color: #ff0070;
   --footer-shadow-color: #ff0070;
   --card-title-color: #000028;
+  --main-font-size: 18px;
 }
 
 /* <!-- главная --> */
@@ -51,7 +52,7 @@
   justify-self: start;
   align-self: center;
   max-width: 355px;
-  font-size: 18px;
+  font-size: var(--main-font-size);
   font-weight: bold;
 }
 
@@ -137,13 +138,13 @@
 /* <!-- статьи и советы --> */
 main {
   background-color: var(--page-bg-color);
-  padding: 10px;
+  padding: 40px 10px 0 10px;
 }
 
 .main-content-section {
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
+  padding-bottom: 50px;
   gap: 20px;
 }
 
@@ -161,6 +162,7 @@ main {
 
 .card__text {
   color: var(--main-font-color);
+  font-size: var(--main-font-size);
 }
 
 .link-decor {
@@ -196,7 +198,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding-top: 50px;
+  padding-bottom: 40px;
 }
 
 .gallery__images {
@@ -256,7 +258,7 @@ footer {
   main,
   .header,
   footer {
-    padding: 20px;
+    padding: 0 20px 0 20px;
   }
 
   .header__text {
@@ -267,12 +269,13 @@ footer {
     flex-direction: row;
   }
 
-  .main-content-section:nth-child(2) {
-    flex-direction: column;
-  }
-
   .section__title {
     min-width: 236px;
+    inline-size: min-content;
+  }
+
+  .main-content-section:nth-child(2) {
+    flex-direction: column;
   }
 
   .gallery__images {
@@ -293,6 +296,18 @@ footer {
 
   .header__text {
     max-width: 364px;
+  }
+
+  main {
+    padding-top: 60px;
+  }
+
+  .main-content-section {
+    padding-bottom: 80px;
+  }
+
+  .gallery {
+    padding-bottom: 60px;
   }
 }
 

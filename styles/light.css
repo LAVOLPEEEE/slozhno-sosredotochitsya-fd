@@ -31,6 +31,7 @@
     --decor-color: #353430;
     --footer-shadow-color: #ff0070;
     --card-title-color: #353430;
+    --main-font-size: 18px;
   }
 
   :root:not(.theme-dark) .rec {
