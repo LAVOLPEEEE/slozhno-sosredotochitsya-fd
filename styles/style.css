@@ -1,21 +1,4 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-:root {
-  --page-bg-color: #000028;
-  --page-bg-image: url(../images/cover-image-dark.png);
-  --accent-color: #ff0070;
-  --button-hover: #ff007066;
-  --button-color: #ff0070;
-  --title-color: #db00ff;
-  --main-title-color: #ff0070;
-  --main-font: "IBM Plex mono", sans-serif;
-  --main-font-color: #f1b2ce;
-  --decor-color: #ff0070;
-  --footer-shadow-color: #ff0070;
-  --card-title-color: #000028;
-  --main-font-size: 18px;
-  --main-line-height: 23.4px;
-}
-
 /* <!-- главная --> */
 .page {
   background-image: var(--page-bg-image);
@@ -26,6 +9,7 @@
   background-size: cover;
   font-family: var(--main-font);
   font-weight: normal;
+  overflow-x: hidden;
 }
 
 .header {
@@ -183,8 +167,9 @@ main {
 }
 
 .advice__title {
-  font-weight: normal;
   color: var(--card-title-color);
+  line-height: var(--main-line-height);
+  font-weight: normal;
 }
 
 .card__title,
