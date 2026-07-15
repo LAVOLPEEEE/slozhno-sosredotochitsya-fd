@@ -276,17 +276,12 @@ footer {
   }
 
   .main-content-section {
-    flex-direction: row;
     padding-bottom: 80px;
   }
 
   .section__title {
     min-width: 236px;
     inline-size: min-content;
-  }
-
-  .main-content-section:nth-child(2) {
-    flex-direction: column;
   }
 
   .gallery {
@@ -352,11 +347,6 @@ footer {
     min-width: 315px;
   }
 
-  .main-content-section:nth-of-type(2) .section__content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .header__theme-menu {
     justify-self: center;
     align-self: start;
@@ -376,6 +366,7 @@ footer {
   }
 
   .text-row-columns {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
