@@ -13,6 +13,7 @@
   --footer-shadow-color: #ff0070;
   --card-title-color: #000028;
   --main-font-size: 18px;
+  --main-line-height: 23.4px;
 }
 
 /* <!-- главная --> */
@@ -163,6 +164,7 @@ main {
 .card__text {
   color: var(--main-font-color);
   font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
 }
 
 .link-decor {
@@ -191,6 +193,7 @@ main {
 .section__title {
   color: var(--main-title-color);
   font-size: 18px;
+  line-height: var(--main-line-height);
 }
 
 /* <!-- галерея --> */
@@ -266,6 +269,7 @@ footer {
 
   .main-content-section {
     flex-direction: row;
+    padding-bottom: 80px;
   }
 
   .section__title {
@@ -300,10 +304,6 @@ footer {
 
   main {
     padding-top: 60px;
-  }
-
-  .main-content-section {
-    padding-bottom: 80px;
   }
 
   .gallery {
