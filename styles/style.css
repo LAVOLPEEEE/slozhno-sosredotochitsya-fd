@@ -256,13 +256,12 @@ footer {
 /* <!-- адаптивы --> */
 @media (width >= 768px) {
   main,
-  .header,
   footer {
     padding: 0 20px 0 20px;
   }
 
-  .header__text {
-    justify-self: end;
+  .header {
+    padding: 20px;
   }
 
   .main-content-section {
@@ -296,6 +295,7 @@ footer {
 
   .header__text {
     max-width: 364px;
+    justify-self: end;
   }
 
   main {
@@ -308,6 +308,21 @@ footer {
 
   .gallery {
     padding-bottom: 60px;
+  }
+
+  .rec {
+    top: 20px;
+    right: 30px;
+  }
+
+  .decorated-zone::before {
+    top: 20px;
+    right: 20px;
+  }
+
+  .decorated-zone::after {
+    bottom: 20px;
+    left: 20px;
   }
 }
 
@@ -332,5 +347,9 @@ footer {
 
   .header__text {
     max-width: 491px;
+  }
+
+  .gallery__images {
+    grid-template-rows: 240px 315px 433px;
   }
 }
