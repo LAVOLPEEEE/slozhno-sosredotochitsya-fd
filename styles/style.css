@@ -102,7 +102,6 @@
 .header__theme-menu-button {
   color: var(--button-color);
   background-color: transparent;
-  border: none;
   font-size: var(--main-font-size);
   line-height: var(--main-line-height);
   width: 70px;
@@ -292,6 +291,7 @@ footer {
 
   .gallery {
     gap: 20px;
+    padding-bottom: 60px;
   }
 
   .gallery__images {
@@ -317,10 +317,6 @@ footer {
 
   main {
     padding-top: 60px;
-  }
-
-  .gallery {
-    padding-bottom: 60px;
   }
 
   .rec {
