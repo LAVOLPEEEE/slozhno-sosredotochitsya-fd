@@ -7,7 +7,7 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: var(--main-font);
+  font-family: var(--main-font), Arial, sans-serif;
   font-weight: normal;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .title-decor {
-  color: var(--page-bg-color);
+  color: var(--card-title-color);
   background-color: var(--accent-color);
 }
 
@@ -106,8 +106,10 @@
   font-size: var(--main-font-size);
   line-height: var(--main-line-height);
   width: 70px;
+  margin-top: 1px;
   text-transform: lowercase;
   font-weight: normal;
+  border: 1px solid transparent;
 }
 
 .header__theme-menu-button_active {
@@ -120,6 +122,7 @@
 .header__theme-menu-button:hover {
   border: 1px solid var(--button-hover);
 }
+
 .header__theme-menu-button:focus-visible {
   outline: none;
   border-bottom: 1px solid var(--button-color);
@@ -133,15 +136,25 @@ main {
 
 .main-content-section {
   display: flex;
-  flex-direction: column;
   padding-bottom: 50px;
   gap: 20px;
 }
 
 .section__content {
   display: flex;
-  flex-direction: column;
   gap: 20px;
+}
+
+.text-row {
+  flex-direction: column;
+}
+
+.text-column {
+  flex-direction: column;
+}
+
+.text-row-columns {
+  flex-direction: column;
 }
 
 .card {
@@ -160,6 +173,7 @@ main {
 .link-decor {
   text-shadow: 2px 1px 0 var(--accent-color);
   text-decoration: none;
+  border: 1px solid transparent;
 }
 
 .link-decor:hover {
@@ -175,12 +189,14 @@ main {
   color: var(--card-title-color);
   line-height: var(--main-line-height);
   font-weight: normal;
+  font-size: 18px;
 }
 
 .card__title,
 .gallery__title {
   color: var(--card-title-color);
   line-height: var(--main-line-height);
+  font-size: 18px;
 }
 .section__title {
   color: var(--main-title-color);
@@ -257,7 +273,7 @@ footer {
   }
 
   .header {
-    padding: 20px 20px 20px 0;
+    padding: 18px 20px 20px 0;
   }
 
   .main-content-section {
@@ -272,6 +288,10 @@ footer {
 
   .main-content-section:nth-child(2) {
     flex-direction: column;
+  }
+
+  .gallery {
+    gap: 20px;
   }
 
   .gallery__images {
@@ -317,6 +337,18 @@ footer {
     bottom: 20px;
     left: 20px;
   }
+
+  .text-row {
+    flex-direction: row;
+  }
+
+  .text-column {
+    flex-direction: column;
+  }
+
+  .text-row-columns {
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -336,6 +368,7 @@ footer {
 
   .header__theme-menu-list {
     flex-direction: row;
+    padding-left: 20px;
   }
 
   .header__text {
@@ -344,5 +377,9 @@ footer {
 
   .gallery__images {
     grid-template-rows: 260px 315px 433px;
+  }
+
+  .text-row-columns {
+    flex-direction: row;
   }
 }

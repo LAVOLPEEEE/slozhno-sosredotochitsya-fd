@@ -4,7 +4,7 @@
   переключая тему
 */
 
-:root {
+:root.theme-dark {
   --page-bg-color: #000028;
   --page-bg-image: url(../images/cover-image-dark.png);
   --accent-color: #ff0070;
