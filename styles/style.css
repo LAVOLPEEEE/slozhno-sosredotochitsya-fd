@@ -189,6 +189,7 @@ main {
 .card__title,
 .gallery__title {
   color: var(--card-title-color);
+  line-height: var(--main-line-height);
 }
 .section__title {
   color: var(--main-title-color);
@@ -264,7 +265,7 @@ footer {
   }
 
   .header {
-    padding: 20px;
+    padding: 20px 20px 20px 0;
   }
 
   .main-content-section {
