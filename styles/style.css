@@ -2,7 +2,7 @@
 /* <!-- главная --> */
 .page {
   background-image: var(--page-bg-image);
-  background-color: #000028;
+  background-color: var(--page-bg-color);
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
