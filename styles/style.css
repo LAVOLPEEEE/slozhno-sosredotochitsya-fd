@@ -165,6 +165,7 @@ main {
   color: var(--main-font-color);
   font-size: var(--main-font-size);
   line-height: var(--main-line-height);
+  font-weight: 400;
 }
 
 .link-decor {
@@ -258,7 +259,7 @@ footer {
 }
 
 /* <!-- адаптивы --> */
-@media (width >= 768px) {
+@media (min-width: 768px) {
   main,
   footer {
     padding: 0 20px 0 20px;
@@ -327,7 +328,7 @@ footer {
   }
 }
 
-@media (width >= 1024px) {
+@media (min-width: 1024px) {
   .section__title {
     min-width: 315px;
   }
