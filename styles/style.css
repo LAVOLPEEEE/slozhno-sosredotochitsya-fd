@@ -144,15 +144,12 @@ main {
   gap: 20px;
 }
 
-.text-row {
-  flex-direction: column;
-}
-
-.text-column {
-  flex-direction: column;
-}
-
-.text-row-columns {
+.advice,
+.advice-list,
+.lower-concentration,
+.lower-concentration-list,
+.reasons,
+.reasons-list {
   flex-direction: column;
 }
 
@@ -329,16 +326,9 @@ footer {
     left: 20px;
   }
 
-  .text-row {
+  .advice,
+  .reasons {
     flex-direction: row;
-  }
-
-  .text-column {
-    flex-direction: column;
-  }
-
-  .text-row-columns {
-    flex-direction: column;
   }
 }
 
@@ -365,8 +355,12 @@ footer {
     grid-template-rows: 260px 315px 433px;
   }
 
-  .text-row-columns {
+  .lower-concentration-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .lower-concentration-list {
+    flex-direction: row;
   }
 }

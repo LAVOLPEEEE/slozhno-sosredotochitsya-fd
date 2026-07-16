@@ -19,3 +19,7 @@
   --main-font-size: 18px;
   --main-line-height: 23.4px;
 }
+
+.rec {
+  display: block;
+}
